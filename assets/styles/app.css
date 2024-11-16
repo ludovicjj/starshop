@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.grid-wrapper {
+    border-radius: 0.5rem;
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 100ms, opacity 300ms;
+}
+
+.grid-wrapper > .inner {
+    overflow: hidden;
+}
+
+.grid-wrapper.open {
+    grid-template-rows: 1fr;
+}
+
+.show-aside {
+    margin-left: 40px;
+    justify-content: start;
+}
+.wrapper-aside {
+    width: 100%;
+}
+@media (min-width: 1024px) {
+    .show-aside {
+        margin-left: 0;
+        justify-content: center;
+    }
+    .wrapper-aside {
+        width: 411px
+    }
+    .wrapper-aside.close {
+        width: 100px;
+    }
+}
