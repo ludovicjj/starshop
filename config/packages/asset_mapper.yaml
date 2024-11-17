@@ -3,6 +3,7 @@ framework:
         # The paths to make available to the asset mapper.
         paths:
             - assets/
+            - { value: '%kernel.project_dir%/vendor/symfony/ux-turbo/assets/dist', namespace: '@symfony/ux-turbo' }
         missing_import_mode: strict
 
 when@prod:

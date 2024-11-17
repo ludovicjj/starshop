@@ -13,3 +13,8 @@ Fix violation rules
 ````
 ./vendor/bin/php-cs-fixer fix
 ````
+
+fix turbo-ux(My hero )
+````
+https://github.com/Kreyu/data-table-bundle/issues/42
+````
